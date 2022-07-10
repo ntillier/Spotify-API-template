@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- the charset -->
+    <meta charset="utf-8">
+
+    <!-- Page's title -->
+    <title>Spotify's API</title>
+
+    <!-- Page's icon -->
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Music_notation_signature.svg/640px-Music_notation_signature.svg.png">
+
+    <!-- we import the main script -->
+    <script src="/script.js" defer></script>
+    
+    <!-- we import the main stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+  </head>
+
+  <!-- the body -->
+  <body>
+
+    <!-- the title -->
+    <h1>Spotify API</h1>
+
+    <!-- the search part -->
+    <div class="search">
+
+      <!-- the input -->
+      <input 
+        placeholder="Type something, press enter to search." 
+        onkeydown="search(event)">
+
+      <!-- the results -->
+      <div class="results"></div>
+    </div><!-- The parameters' part. I want this part and the other to cover the body, so there aren't spaces between the tags. --><div class="params">
+      <b>Include:</b><br>
+    </div>
+  </body>
+</html>

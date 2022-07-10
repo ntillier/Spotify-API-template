@@ -1,0 +1,148 @@
+:root {
+  --green: #1DB954;
+  --black: #191414;
+}
+
+/*==========
+
+Scrollbar styling
+
+==========*/
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+	border-radius: 5px;
+	background: var(--green);
+}
+
+/*==========
+
+Main style
+
+==========*/
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  color: var(--black);
+  font-family: sans-serif;
+}
+h1 {
+  display: block;
+  text-align: center;
+  margin: 50px auto;
+  padding: 15px 0 50px 0;
+  width: 50%;
+  border-bottom: solid 5px var(--green);
+}
+.search, .params {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  padding: 10px;
+  min-height: 100px;
+  height: auto;
+}
+.search {
+  width: 58vw;
+  left: 1vw;
+}
+.params {
+  border-left: solid 2px var(--black);
+  width: 40vw;
+  position: sticky;
+  top: 0px;
+}
+.search input {
+  outline: none;
+  border: solid 2px var(--green);
+  border-radius: 100px;
+  width: 90%;
+  height: 50px;
+  padding: 20px;
+  font-size: 18px;
+}
+.results {
+  position: relative;
+}
+.results div, .results div * {
+  cursor: pointer;
+}
+.results div {
+  border: solid 2px var(--green);
+  border-radius: 20px;
+  width: 90%;
+  margin: 10px 0;
+  padding: 10px;
+}
+.results div img {
+  vertical-align: middle;
+  height: 60px;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+.results label {
+  font-size: 18px;
+}
+
+/*==========
+
+Style for the toogle switch
+
+==========*/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+  vertical-align: middle;
+}
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.switch span{
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #ccc;
+  transition: .1s;
+}
+.switch span:before {
+  position: absolute;
+  content: "";
+  height: 80%;
+  width: 40%;
+  top: 10%;
+  left: 5%;
+  bottom: 4px;
+  background: white;
+  transition: .4s;
+}
+input:checked + span {
+  background: var(--green);
+}
+input:checked + span:before {
+  transform: translateX(120%);
+}
+.switch span {
+  border-radius: 100px;
+}
+.switch span:before {
+  border-radius: 50%;
+}
+.switch + label {
+  position: relative;
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  left: 10px;
+  font-size: 17px;
+  vertical-align: middle;
+}
