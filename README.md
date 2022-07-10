@@ -70,7 +70,3 @@ The reason why it stores the variable `obj` in the database is that when you cod
 ## Next steps
 From this template, you can do many things!
 You can extand its features by using [Deezer's API](https://developers.deezer.com/), or by looking for [all the endpoints of Spotify's API](https://developer.spotify.com/documentation/web-api/reference/#/)
-
-There are so many possibilities! Ready to go? 1, 2, 3...code
-
-_If you notice any error in this template, please report it in a comment._
