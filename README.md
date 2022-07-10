@@ -40,7 +40,7 @@ But you can't use them to access to the API. They will give you access to a temp
 
 Then, with the token you've fetched, you can send a request to Spotify's API. You need to do a `GET` request, with, in the header, the `Authorization` parameter. Its value must be the `Bearer` prefix with the token after.
 
-> **Note:** In this project, all the requests to Spotify's API are done from the backend. You can do it from the frontend part, by provinding only the token to the user.
+> **Note:** In this project, all the requests to Spotify's API are done from the backend. You can do it from the frontend part, by providing only the token to the user.
 
 ## How the project works
 In the `index.js` file, I use Express to manage the routes. In these routes, there is a route called `/api/search`. When a request is processed, the program does a request to Spotify's API, and then send the datas fetched.
